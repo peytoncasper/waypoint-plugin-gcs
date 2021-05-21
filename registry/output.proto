@@ -1,0 +1,11 @@
+
+syntax = "proto3";
+
+package registry;
+
+option go_package = "github.com/peytoncasper/waypoint-plugin-gcs/registry";
+
+message Artifact {
+  string bucket = 1;
+  string object_path = 2;
+}
